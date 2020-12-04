@@ -93,7 +93,14 @@ const yearsUntilRetirement = function (name, birthYear) {
 console.log(yearsUntilRetirement("Qandeel", 1995));
 console.log(yearsUntilRetirement("Purdal", 1986));
 
-//
+// Coding Challenge #1
+/*
+Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
+Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team).
+A team ONLY wins if it has at least DOUBLE the average score of the other team. Otherwise, no team wins!
+
+1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+2. Use the function to calculate the average for both teams*/
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
 //Test 01
