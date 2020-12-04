@@ -42,3 +42,10 @@ function birthYearOne(birthYear) {
 const nowAge = birthYearOne(1995);
 console.log(nowAge);
 //arguments is the value that we use here as a place holder that is the parameter. e.g 1995 is the argument
+
+//function without a name
+const birthYearTwo = function (birthYear) {
+  return 2020 - birthYear;
+};
+const newAge = birthYearTwo(1986);
+console.log(newAge);
