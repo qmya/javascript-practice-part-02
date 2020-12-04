@@ -30,3 +30,15 @@ function fruitProcessor(apples, oranges) {
 //changing the values will be passed into the function and give the output as needed
 const fruitJuice = fruitProcessor(5, 3); //capture/put in somewhere
 console.log(fruitJuice);
+
+//function declaration vs. expressions
+function birthYearOne(birthYear) {
+  //birthyear is the parameter
+  //   const age = 2020 - birthYear;
+  //   return age;
+  //instead of the above ☝🏽 syntax you can also do this:
+  return 2020 - birthYear;
+}
+const nowAge = birthYearOne(1995);
+console.log(nowAge);
+//arguments is the value that we use here as a place holder that is the parameter. e.g 1995 is the argument
