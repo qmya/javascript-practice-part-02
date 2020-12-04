@@ -92,3 +92,27 @@ const yearsUntilRetirement = function (name, birthYear) {
 };
 console.log(yearsUntilRetirement("Qandeel", 1995));
 console.log(yearsUntilRetirement("Purdal", 1986));
+
+//
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+//Test 01
+const dolphinAvg = calcAverage(44, 23, 71);
+const koalasAvg = calcAverage(65, 54, 49);
+console.log(dolphinAvg);
+console.log(koalasAvg);
+
+//3. Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)".
+
+function checkWinner(dolphinAvg, koalasAvg) {
+  if (dolphinAvg >= 2 * koalasAvg) {
+    console.log("🐬 is the 🏆");
+  } else if (dolphinAvg * 2 <= koalasAvg) {
+    console.log("🐨 is the 🏆");
+  } else if (dolphinAvg === koalasAvg) {
+    console.log("DRAW");
+  } else {
+    console.log("no one wins");
+  }
+}
+checkWinner(46, 56);
