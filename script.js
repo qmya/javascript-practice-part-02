@@ -32,6 +32,7 @@ const fruitJuice = fruitProcessor(5, 3); //capture/put in somewhere
 console.log(fruitJuice);
 
 //function declaration vs. expressions
+//function declaration
 function birthYearOne(birthYear) {
   //birthyear is the parameter
   //   const age = 2020 - birthYear;
@@ -43,7 +44,8 @@ const nowAge = birthYearOne(1995);
 console.log(nowAge);
 //arguments is the value that we use here as a place holder that is the parameter. e.g 1995 is the argument
 
-//function without a name
+//function without a name: Anonymous function
+//function expression
 const birthYearTwo = function (birthYear) {
   return 2020 - birthYear;
 };
