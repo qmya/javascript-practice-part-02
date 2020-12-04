@@ -51,3 +51,30 @@ const birthYearTwo = function (birthYear) {
 };
 const newAge = birthYearTwo(1986);
 console.log(newAge);
+
+//Arrow function
+const birthYear3 = (birthYear) => 2020 - birthYear;
+const age3 = birthYear3(1995);
+console.log(age3);
+
+//Arrow function example:1
+const yearsLeftToRetirement = (retirementYear) => retirementYear - 2020;
+
+const yearsToRetire = yearsLeftToRetirement(2025);
+console.log(yearsToRetire);
+
+////Arrow function example:2 on age
+const yearsUntilRetirement = (birthYear, name) => {
+  const age = 2020 - birthYear;
+  console.log(age);
+  const retirment = 65 - age;
+  //   return retirment;
+  return `${name} will retire in ${retirment} years`;
+};
+// const retirementYearsLeft = yearsUntilRetirement(1995, "Qandeel");
+// retirementYearsLeft = yearsUntilRetirement(1986, "Purdal");
+console.log(yearsUntilRetirement(1995, "Qandeel"));
+console.log(yearsUntilRetirement(1986, "Purdal"));
+
+// use arrow function for one line of code
+//use normal function for more line of code
