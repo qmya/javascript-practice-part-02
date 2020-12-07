@@ -233,3 +233,39 @@ const total = [
   bills[2] + arrTip[2],
 ];
 console.log(total);
+
+//Introduction to OBJECTS
+const qandeel = {
+  firstName: "Qandeel",
+  lastName: "Mya",
+  age: 2020 - 1995,
+  job: "Web developer",
+  friends: ["Michael", "Jay", "Peter"],
+};
+console.log(qandeel.name);
+console.log(qandeel);
+console.log(qandeel.lastName);
+console.log(qandeel["lastName"]);
+
+const nameKey = "Name";
+console.log(qandeel["first" + nameKey]);
+console.log(qandeel["last" + nameKey]);
+
+console.log(qandeel.firstName + qandeel.lastName);
+
+const interestedIn = prompt(
+  "What do you want to know about Qandeel? Choose between firstName, lastName, age,job and friends"
+);
+console.log(qandeel[interestedIn]);
+
+//adding new elements to the objects
+qandeel.name = qandeel.firstName + " " + qandeel.lastName;
+qandeel.location = "Canada";
+console.log(qandeel);
+
+//Challenge
+//write this sentence in dynamic way
+//"Qandeel has 3 friends , and her best friend is called Michael";
+
+const sentence = `${qandeel.firstName} + has ${qandeel.friends.length} ${friends}, + and her best friend is called ${qandeel.friends[0]}`;
+console.log(sentence);
