@@ -163,5 +163,30 @@ console.log(calculateAge(yearsOfBirth[4]));
 
 //Javascript Array methods
 const newFriends = ["Michael", "Steven", "Peter"];
-newFriends.push("Pinkman");
+const newLength = newFriends.push("Pinkman");
+console.log(newLength);
 console.log(newFriends);
+
+//Adding element to the start of an array
+newFriends.unshift("Walter White");
+console.log(newFriends);
+
+//Remove last elements of an array
+//Pop
+console.log(newFriends.pop());
+console.log(newFriends);
+
+//shift
+//remove the first element of an array
+console.log(newFriends.shift());
+console.log(newFriends);
+
+//finding the index of an element in an Array
+console.log(newFriends.indexOf("Steven"));
+//if there is no element e.g
+console.log(newFriends.indexOf("bob")); //gives -1
+//similar method that is more modern than indexOf
+//includes which will give true if the element is there and false if not
+
+console.log(newFriends.includes("Steven"));
+console.log(newFriends.includes("bob"));
