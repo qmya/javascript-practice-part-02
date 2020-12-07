@@ -415,3 +415,25 @@ for (let i = 0; i < newJonas.length; i++) {
     break;
   }
 }
+
+//Looping Backwards and Loops in Loops
+
+const newPurdalArray = [];
+const purdal = ["Purdal", "kakakhel", 2037 - 1990];
+//2,1,0
+for (let i = purdal.length - 1; i >= 0; i--) {
+  console.log(purdal[i]);
+  newPurdalArray.push(purdal[i]);
+  console.log(i);
+}
+console.log(purdal, newPurdalArray);
+
+//Loop inside a Loop
+//So we are doing 3 different excercises today in the gym
+
+for (let excercise = 1; excercise < 4; excercise++) {
+  console.log(`-------Starting excercise ${excercise}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${excercise}: Lifting weight ${rep} 🏋🏼‍♀️`);
+  }
+}
