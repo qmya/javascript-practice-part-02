@@ -124,6 +124,7 @@ function checkWinner(dolphinAvg, koalasAvg) {
 }
 checkWinner(46, 56);
 
+//Introduction to Arrays
 //Data structure
 //big container to save
 
@@ -150,3 +151,12 @@ const me = [firstName, 2020 - 1995, "job", friends];
 console.log(me);
 
 //Exercise
+
+const calculateAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsOfBirth = [1990, 1967, 2002, 2010, 2018];
+console.log(calculateAge(yearsOfBirth[0]));
+console.log(calculateAge(yearsOfBirth[3]));
+console.log(calculateAge(yearsOfBirth[4]));
