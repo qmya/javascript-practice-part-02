@@ -123,3 +123,30 @@ function checkWinner(dolphinAvg, koalasAvg) {
   }
 }
 checkWinner(46, 56);
+
+//Data structure
+//big container to save
+
+const friends = ["Michael", "Steven", "Peter"];
+
+console.log(friends);
+
+console.log(friends[1], friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+//wanna change/mutate the array
+//you canot change the whole array but you can change the value
+friends[1] = "Purdal";
+console.log(friends);
+
+//different way to denote array
+
+const years = new Array(1991, 1993, 1994, 2000);
+console.log(years);
+
+const firstName = "Qandeel";
+const job = "Web developer";
+const me = [firstName, 2020 - 1995, "job", friends];
+console.log(me);
+
+//Exercise
