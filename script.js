@@ -374,3 +374,44 @@ if (john.johnBMI > mark.markBMI) {
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋🏼‍♀️`);
 }
+
+//Looping Arrays , Breaking and continuing
+
+const newJonas = [
+  "Jonas",
+  "Josh",
+  2020 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+const types = [];
+
+for (let i = 0; i < newJonas.length; i++) {
+  //reading the typeof newjonas array
+  console.log(newJonas[i], typeof newJonas[i]);
+  //filling an array
+  types[i] = typeof newJonas[i];
+  //another way to fill an array
+  types.push(typeof newJonas[i]);
+}
+console.log(types);
+
+//example
+const yearBorn = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < yearBorn.length; i++) {
+  console.log(2037 - years[i]);
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+//continue and break
+
+for (let i = 0; i < newJonas.length; i++) {
+  if (typeof newJonas !== "string") continue;
+  else if (typeof newJonas == "string") {
+    break;
+  }
+}
