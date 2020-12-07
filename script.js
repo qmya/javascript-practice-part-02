@@ -364,3 +364,13 @@ if (john.johnBMI > mark.markBMI) {
     } (${john.calcBMI()})`
   );
 }
+
+//Loops: best way to write DRY using loop
+//Loop statement has 3 parts
+//1. intial value
+//2. how much you want to repeat
+//3. Update the counter after each iterations ++
+// for loops keeps running while the condition is true
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋🏼‍♀️`);
+}
