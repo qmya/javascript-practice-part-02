@@ -160,3 +160,8 @@ const yearsOfBirth = [1990, 1967, 2002, 2010, 2018];
 console.log(calculateAge(yearsOfBirth[0]));
 console.log(calculateAge(yearsOfBirth[3]));
 console.log(calculateAge(yearsOfBirth[4]));
+
+//Javascript Array methods
+const newFriends = ["Michael", "Steven", "Peter"];
+newFriends.push("Pinkman");
+console.log(newFriends);
