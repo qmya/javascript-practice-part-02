@@ -437,3 +437,24 @@ for (let excercise = 1; excercise < 4; excercise++) {
     console.log(`Exercise ${excercise}: Lifting weight ${rep} 🏋🏼‍♀️`);
   }
 }
+
+//The While loop
+//same parts needed as for loop
+//just need condition to run
+//when you dont know how much will the code run togive ypu the specific answer we use while loop
+let rep = 1;
+while (rep <= 10) {
+  console.log("running until 10");
+  rep++;
+}
+
+//while example
+//Math.trunc removes the decimal afterpoints
+//math.random gives you number 0 or 1
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end");
+}
