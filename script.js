@@ -269,3 +269,45 @@ console.log(qandeel);
 
 const sentence = `${qandeel.firstName} + has ${qandeel.friends.length} ${friends}, + and her best friend is called ${qandeel.friends[0]}`;
 console.log(sentence);
+
+//Objects methods
+
+const newQandeel = {
+  firstName: "Qandeel",
+  lastName: "Mya",
+  birthYear: 1995,
+  job: "Web developer",
+  friends: ["Michael", "Jay", "Peter"],
+  hasDriversLicense: true,
+  //   calculateAge: function (birthYear) {
+  //     return 2037 - birthYear;
+  calculateAge: function () {
+    console.log(this); //this is the whole qandeel object
+    //creating a new property in the object
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(newQandeel.calculateAge());
+console.log(newQandeel["calculateAge"](1995));
+console.log(newQandeel);
+
+//Challenge
+const jonas = {
+  firstName: "Jonas",
+  birthYear: 1991,
+  job: "teacher",
+  hasDriversLicense: true,
+  jonasAge: function () {
+    console.log(this);
+    this.age = 2020 - this.birthYear;
+    console.log(this.age);
+    return this.age;
+  },
+};
+
+const aboutJonas = `${jonas.firstName} is a ${jonas.jonasAge()}-year old ${
+  jonas.job
+}, and he has ${jonas.hasDriversLicense ? "a " : "no"} driver license`;
+console.log(aboutJonas);
